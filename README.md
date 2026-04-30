@@ -20,6 +20,8 @@ A robust full-stack application to manage books, members, and lending operations
    # On macOS/Linux:
    source .venv/bin/activate
    ```
+   go to NHLibraryService directory and run the following command to create the virtual environment:
+   ``` uv sync ```
 
 3. Install the required dependencies:
    ```bash
