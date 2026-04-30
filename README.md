@@ -11,7 +11,7 @@ A robust full-stack application to manage books, members, and lending operations
 
 ## Environment Setup
 
-1. Navigate to the project root directory (`numinolabs`).
+1. Navigate to the project root directory (`NHLibraryService`).
 
 2. Activate your virtual environment (if you are using one):
    ```bash
@@ -27,6 +27,14 @@ A robust full-stack application to manage books, members, and lending operations
    ```bash
    pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic python-dotenv
    ```
+   or
+   ```bash
+   uv add fastapi uvicorn sqlalchemy psycopg2-binary pydantic python-dotenv
+   ```
+   or
+   ```bash
+   uv sync
+   ```
 
 ## 1. Database Setup
 
@@ -34,7 +42,7 @@ This project uses PostgreSQL.
 
 1. Ensure PostgreSQL is installed and running on your system.
 2. Create a database named `nhlibraryservice`.
-3. The database connection is configured in `.env` file in root directory.
+3. The database connection is configured in `.env` file in outside NHLibraryService directory.
 4. Variable names such as followed by
    DBUSER=''
    DBPASSWORD=''
@@ -43,9 +51,13 @@ This project uses PostgreSQL.
    DBPORT=''
 
 5. **Initialize the Tables:** 
-   Run the following script from the root directory (`numinolabs`) to create all necessary tables automatically:
+   Run the following script from the root directory (`NHLibraryService`) to create all necessary tables automatically:
    ```bash
    uv run python -m backend.create_tables
+   ```
+   or
+   ```bash
+   python -m backend.create_tables
    ```
 
 ---
