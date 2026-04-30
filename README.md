@@ -90,6 +90,8 @@ This project uses PostgreSQL.
    
 4. The frontend application will be running at `http://localhost:3000`. Open this URL in your browser to interact with the premium library interface.
 
+5. To point backend service api, go to the `frontend/src/lib/api.ts` file and update the API_BASE_URL variable.
+
 ---
 
 ## 4. Usage Flow
